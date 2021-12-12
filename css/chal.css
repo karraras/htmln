@@ -1,0 +1,327 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  width: 1000px;
+  height: 1115px;
+  padding: 25px;
+  border: 1px #e0e0e0 solid;
+  position: relative;
+  display: grid;
+  padding-left: 205px;
+  padding-right: 120px;
+  grid-template-columns: 455px 160px;
+  grid-template-rows: 840px 100px 100px;
+  margin: 20px auto;
+}
+:root {
+  --redcolor: red;
+  --graycolor: #eeeeee;
+  --whitecolor: white;
+  --colorblack: black;
+}
+img {
+  width: 30px;
+}
+.container .partst {
+  display: grid;
+  grid-area: 1/1/2/3;
+}
+
+.container .one {
+  width: 455px;
+  height: 120px;
+  background-color: var(--graycolor);
+  margin-top: 8px;
+  display: flex;
+  border-radius: 5px;
+}
+.container .one img {
+  width: 140px;
+  height: 120px;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container .one .text {
+  margin: 15px;
+  font-size: 9px;
+}
+.container .one .text h2 {
+  margin: -3px;
+}
+.container .one .text p:first-child {
+  font-size: 15px;
+  margin-top: 0;
+}
+.container .threeline .img i,
+.container .one .text i {
+  color: red;
+  margin-right: 5px;
+}
+.container .one .text h4 {
+  color: red;
+}
+h2 {
+  font-family: "Kalam", cursive;
+}
+/* ............................................
+............................................... */
+.rightpart {
+  width: 160px;
+  font-size: 10px;
+  display: grid;
+  grid-area: 1/2/2/3;
+}
+.rightpart hr {
+  border: none;
+  height: 1px;
+  margin: 5px;
+  width: 130px;
+  margin-left: 20px;
+  background-color: #bdbdbd;
+}
+.rightpart h2 {
+  margin: 4px;
+  margin-left: 22px;
+  margin-bottom: -5px;
+}
+.rightpart .oneline input {
+  font-size: 11px;
+  width: 134px;
+  height: 23px;
+  border-radius: 40px;
+  padding-left: 10px;
+  margin-left: 15px;
+  margin-top: 7px;
+  border: 1px solid var(--graycolor);
+}
+.rightpart .oneline {
+  margin-bottom: -25px;
+}
+/* --------- */
+.rightpart .oneline i {
+  position: absolute;
+  left: 785px;
+  top: 37px;
+  font-size: 13px;
+  color: #9e9e9e;
+}
+/* ............ */
+.rightpart .twoline {
+  height: 155px;
+}
+.rightpart .twoline .pointer .detiles {
+  display: flex;
+  justify-content: space-around;
+  height: 18px;
+}
+.rightpart .twoline .pointer .detiles span {
+  margin-right: 10px;
+  margin-left: 1px;
+}
+.rightpart .twoline .pointer .detiles p:last-child {
+  margin-right: -15px;
+}
+.rightpart .twoline .pointer .detiles:last-child {
+  margin-right: 13px;
+  margin-left: 12px;
+}
+/* ............ */
+.container .threeline {
+  margin-top: -36px;
+  height: 279px;
+}
+.container .threeline .img {
+  display: flex;
+}
+.container .threeline img {
+  width: 50px;
+  height: 35px;
+  display: flex;
+  padding-left: 20px;
+}
+.container .threeline .img div {
+  font-size: 7px;
+  margin-right: 0px;
+  margin-left: 13px;
+}
+.container .threeline .picture img {
+  width: 160px;
+  height: 132px;
+  margin-top: 14px;
+}
+.container .threeline .picture::before {
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 132px;
+  background-color: #00000080;
+  left: 682px;
+  bottom: 581px;
+}
+.container .threeline .picture p:nth-of-type(1) {
+  position: absolute;
+  font-size: 11px;
+  width: 150px;
+  text-align: center;
+  color: white;
+  top: 456px;
+  margin-left: 10px;
+}
+
+.container .threeline .picture h2 span {
+  color: red;
+  margin-right: 6px;
+}
+.container .threeline .picture p:nth-of-type(2) {
+  position: absolute;
+  top: 460px;
+  margin-left: 30px;
+}
+.container .threeline .picture h2 {
+  font-size: 22px;
+  margin-top: -131px;
+  margin-left: 34px;
+  z-index: 3;
+  color: var(--whitecolor);
+  position: relative;
+}
+.container .threeline .picture button {
+  position: absolute;
+  top: 490px;
+  left: 695px;
+  padding: 9px;
+  border-radius: 25px;
+  padding-right: 17px;
+  padding-left: 17px;
+  border: none;
+  background-color: var(--redcolor);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+.container .forthline .picture img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 2px;
+}
+.container .forthline .picture {
+  margin-left: 20px;
+}
+.container .fifth .tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 0px;
+}
+.container .fifth h2 {
+  margin-top: -19px;
+}
+.container .fifth .tags p {
+  width: fit-content;
+  background-color: var(--graycolor);
+  border-radius: 18px;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 9px;
+}
+
+.container .linerfooter {
+  display: grid;
+
+  text-align: center;
+  margin-top: 56px;
+  height: 100px;
+  grid-area: 2/1/3/3;
+}
+
+.container .linerfooter .inside {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.container .linerfooter p {
+  margin-top: 30px;
+  color: #bdbdbd;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 1px solid #bdbdbd;
+  font-size: 13px;
+}
+.container .linerfooter p:nth-of-type(2) {
+  background-color: var(--redcolor);
+}
+.container .footer img {
+  width: 955px;
+  height: 60px;
+  margin-left: 20px;
+}
+.container .footer {
+  position: absolute;
+  bottom: 3px;
+}
+.container .footer::before {
+  content: "";
+  position: absolute;
+  width: 955px;
+  height: 60px;
+  margin-left: 20px;
+  background-color: var(--colorblack);
+}
+.container .abovefooter {
+  padding: 10px;
+  margin: 1px;
+  border-radius: 5px;
+  grid-area: 3/1/4/3;
+  display: grid;
+  font-size: 10px;
+  z-index: 1;
+  margin-top: 34px;
+  height: 85px;
+  background-color: var(--redcolor);
+}
+.container .abovefooter .text p:nth-of-type(1) {
+  width: 285px;
+  margin-top: -10px;
+}
+.container .abovefooter .text input {
+  position: absolute;
+  left: 495px;
+  top: 1025px;
+  height: 39px;
+  width: 310px;
+  border-radius: 40px;
+  border: none;
+  padding-left: 20px;
+  background-color: #f44336;
+  font-size: 10px;
+}
+.container .abovefooter .text p:last-of-type {
+  position: absolute;
+  bottom: 47px;
+  left: 725px;
+
+  padding: 8px;
+  border-radius: 23px;
+  font-size: 10px;
+}
+.container .abovefooter .text {
+  color: var(--whitecolor);
+}
+::placeholder {
+  color: var(--graycolor);
+}
